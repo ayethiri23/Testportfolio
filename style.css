@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+nav img{
+    width: 75px;
+    object-fit: contain;
+}
+
+nav ul{
+    width: 550px;
+    height: 100%;
+    /* background-color: pink; */
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a{
+    color: #8a8883;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    padding: 10px 20px;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    background-color: rgb(15, 163, 143);
+}
+
+nav .hi{
+    color: #067010;
+    font-size: 0.8rem;
+    text-decoration: none;
+    /*line-height: 60px;*/
+    border-bottom: 1px solid #067010;
+}
+
+#home{
+    width: 100%;
+    height: 550px;
+    /*background-color: aquamarine;*/
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 30px; */
+}
+
+#home .model{
+    width: 400px;
+    height: 450px;
+    /*background-color: bisque;*/
+}
+
+.model img{
+    width: 100%;/*400px*/
+    height: 100%;/*450px*/
+    object-fit: contain;
+}
+
+#home .content{
+    width: 500px;
+    height: 210px;
+    /*background-color: burlywood;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+
+.content h1{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.content p{
+    color: #8a8883;
+    margin-bottom: 20px;
+}
+
+.content a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: rgb(15, 163, 143);
+    padding: 10px 17px;
+    border-radius: 30px;
+
+    transition: all 0.2s;
+}
+
+.content a:hover{
+    background-color: #5fb360;
+}
+
+#skills{
+    width: 100%;
+    height: 500px;
+    /*background-color: aquamarine;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+#skills .skilltext{
+    width: 400px;
+    height: 450px;
+    /*background-color: burlywood;*/
+}
+
+.skilltext span{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0da36a;
+}
+
+.skilltext h1{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    /*font-weight: 500;*/
+}
+
+.skilltext .skillinfo{
+    width: 100%;
+    height: 100px;
+    /*background-color: cadetblue;*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.skilltext .skillinfo i{
+    background-color: lightblue;
+    padding: 12px 15px;
+    border-radius: 50%;
+}
+
+.fa-html5{
+    color: red;
+    font-size: 1.2rem;
+}
+
+.fa-css3-alt{
+    color: blue;
+    font-size: 1.2rem;
+}
+
+.fa-square-js{
+    color: tomato;
+    font-size: 1.2rem;
+}
+
+.skilltext .skillinfo div{
+    margin-left: 30px;
+}
+
+.skillinfo div h3{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skillinfo div p{
+    font-size: 0.9rem;
+}
+
+#skills .skillphoto{
+    width: 550px;
+    height: 380px;
+    /*background-color: blueviolet;*/
+}
+
+.skillphoto img{
+    width: 100%;
+    height: 100%;
+}
+
+#recent{
+    /*width: 100%;
+    height: 500px;
+    background-color: aqua;*/
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.recenthead span{
+    color: #0da36a;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.recenthead h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+#recent a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #06794d;
+    padding: 7px 38px;
+    border-radius: 30px;
+
+    transition: all 0.2s;
+}
+
+#recent a:hover{
+    background-color: #2ee69f;
+}
+
+#client{
+    width: 100%;
+    height: 500px;
+    /*background-color: aqua;*/
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+#client span{
+    color: #0da36a;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#client h3{
+    text-transform: capitalize;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+#client .clientcontainer{
+    width: 100%;
+    height: 400px;
+    /*background-color: burlywood;*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientcontainer .clientbox{
+    width: 300px;
+    height: 350px;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px 6px rgba(0,0,0,0.25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.clientbox:hover{
+    background-color: skyblue;
+    transform: translateY(-10px);
+}
+
+.clientbox img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.clientbox .stars{
+    display: flex
+}
+
+.fa-star{
+    color: goldenrod;
+}
+
+.clientbox p{
+    /* width: 100%; */
+    /* height: 80px; */
+    /* background-color: purple; */
+    
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 30px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+    
+    /*background-color: purple;*/
+}
+
+.clientbox a{
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 14px;
+    background-color: #086944;
+}
+
+.clientbox a:hover{
+    background-color: #2ee69f;
+    transition: all 0.2s;
+}
+
+#contact{
+    width: 100%;
+    height: 650px;
+    /* background-color: purple; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact img{
+    width: 500px;
+}
+
+#contact h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+#contact .inbox{
+    width: 300px;
+    height: 50px;
+    /* background-color: skyblue; */
+    border-radius: 50px;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.2);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inbox input{
+    border: none;
+    text-align: center;
+}
+
+.inbox input:focus{
+    outline: none;
+}
+
+.inbox a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #086944;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    /* background-color: aqua; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
